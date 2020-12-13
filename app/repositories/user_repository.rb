@@ -5,6 +5,6 @@
 class UserRepository < AbstractRepository
   def initialize
     super
-    model = User
+    @model = User
   end
 end

@@ -2,8 +2,8 @@ class CreateDoctors < ActiveRecord::Migration[6.1]
   def change
     create_table :doctors do |t|
       t.string :document
-      t.reference :users
-      t.reference :medical_specialization
+      t.references :users
+      t.references :medical_specializations
 
       t.timestamps
     end
