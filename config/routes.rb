@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get 'user/:id', to: 'users#get', as: 'user'
-  post 'user/create', to: 'users#create', as: 'user_create'
+  # Doctor routes
+  get 'doctor/:id', to: 'doctors#get', as: 'doctor'
   post 'doctor/create', to: 'doctors#create', as: 'doctor_create'
-  get 'doctor/:id', to: 'doctors#get', as: 'doctor_get'
+  post 'doctor/:id/update', to: 'doctors#update', as: 'doctor_update'
+  delete 'doctor/:id', to: 'doctors#delete', as: 'doctor_delete'
+
+  # Patient routes
+  get 'patient/:id', to: 'patients#get', as: 'doctor'
+  post 'patient/create', to: 'patients#create', as: 'doctor_create'
+  post 'patient/:id/update', to: 'patients#update', as: 'doctor_update'
+  delete 'patient/:id', to: 'patients#delete', as: 'doctor_delete'
 end
