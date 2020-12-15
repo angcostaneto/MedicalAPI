@@ -7,21 +7,20 @@ class AbstractRepository < Repository
   attr_writer :get, :create, :update, :delete
   attr_accessor :model
 
-  def get(*filters)
-    return model.find_by(filters)
+  def get(filters)
+    @model.find_by(filters)
   end
 
-  def create(*args)
-    model.create(args)
+  def create(args)
+    model = @model.new(args)
+    model.save
 
-    return model
+    model
   end
 
-  def update(id, *args)
+  def update(id, args)
     model = get(id)
     model.update(args)
-
-    return model
   end
 
   def delete(id)
