@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   delete 'doctor/:id', to: 'doctors#delete', as: 'doctor_delete'
 
   # Patient routes
-  get 'patient/:id', to: 'patients#get', as: 'doctor'
-  post 'patient/create', to: 'patients#create', as: 'doctor_create'
-  post 'patient/:id/update', to: 'patients#update', as: 'doctor_update'
-  delete 'patient/:id', to: 'patients#delete', as: 'doctor_delete'
+  get 'patient/:id', to: 'patients#get', as: 'patient'
+  post 'patient/create', to: 'patients#create', as: 'patient_create'
+  post 'patient/:id/update', to: 'patients#update', as: 'patient_update'
+  delete 'patient/:id', to: 'patients#delete', as: 'patient_delete'
 end

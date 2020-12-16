@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04ecb931-047a-4f18-a663-1cb150d945a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/patients_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/secured_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/authorization_service.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/credentials/development.yml.enc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/json_web_token_module/json_web_token_module.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/doctors_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/doctors_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user_base.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user_base.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/doctors_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/doctors_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Ruby Module" />
+        <option value="Ruby Class" />
         <option value="Ruby File" />
       </list>
     </option>
@@ -58,6 +60,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
@@ -172,7 +175,8 @@
       <workItem from="1607879687857" duration="7824000" />
       <workItem from="1607900731923" duration="111000" />
       <workItem from="1607900922571" duration="10803000" />
-      <workItem from="1607983517904" duration="10664000" />
+      <workItem from="1607983517904" duration="11170000" />
+      <workItem from="1608071687417" duration="9936000" />
     </task>
     <task id="LOCAL-00001" summary="Create databases tables, create repository base, create user repository and user controller">
       <created>1607822318317</created>
@@ -188,7 +192,35 @@
       <option name="project" value="LOCAL" />
       <updated>1607901871124</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Correcto doctor service and doctor controller and add doctor routes">
+      <created>1607997195050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607997195050</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create user base">
+      <created>1607997214899</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607997214899</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Create patients controller">
+      <created>1607997228087</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607997228087</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update readme and add jwt token">
+      <created>1607997262630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607997262630</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,9 +242,13 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Create databases tables, create repository base, create user repository and user controller" />
     <MESSAGE value="Correct user repository, connect to dev database and add bcrypt gem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct user repository, connect to dev database and add bcrypt gem" />
+    <MESSAGE value="Correcto doctor service and doctor controller and add doctor routes" />
+    <MESSAGE value="Create user base" />
+    <MESSAGE value="Create patients controller" />
+    <MESSAGE value="Update readme and add jwt token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme and add jwt token" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MedicalAPI@Development__MedicalAPI.rcov" NAME="Development: MedicalAPI Coverage Results" MODIFIED="1607994149358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MedicalAPI" />
+    <SUITE FILE_PATH="coverage/MedicalAPI@Development__MedicalAPI.rcov" NAME="Development: MedicalAPI Coverage Results" MODIFIED="1608078542861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MedicalAPI" />
   </component>
 </project>

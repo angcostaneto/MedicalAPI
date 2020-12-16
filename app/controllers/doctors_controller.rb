@@ -1,4 +1,4 @@
-class DoctorsController < ApplicationController
+class DoctorsController < SecuredController
   def initialize
     super
     @doctor_service = DoctorsService.new

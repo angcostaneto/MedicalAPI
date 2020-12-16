@@ -1,3 +1,3 @@
-class PatientsController < ApplicationController
+class PatientsController < SecuredController
 
 end
