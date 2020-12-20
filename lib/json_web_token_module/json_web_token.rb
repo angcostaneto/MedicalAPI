@@ -51,5 +51,21 @@ module JsonWebTokenModule
       response = http.request(request)
       response.read_body
     end
+
+    def self.revoke_token_user(token)
+      url = URI("#{Rails.application.credentials.dig(:auth0, :domain)}oauth/revoke")
+
+      http = Net::HTTP.new(url.host, url.port)
+      http.use_ssl = true
+      http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+      request = Net::HTTP::Post.new(url)
+      request['content-type'] = 'application/json'
+
+      request.body = "{\"client_id\":\"#{Rails.application.credentials.dig(:auth0, :client_id)}\",\"client_secret\":\"#{Rails.application.credentials.dig(:auth0, :client_secret)}\",\"audience\":\"#{Rails.application.credentials.dig(:auth0, :api_identifier)}\",\"token\": \"#{token}\"}"
+
+      response = http.request(request)
+      response.read_body
+    end
   end
 end

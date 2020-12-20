@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  value: 9.99
+  pacient: 
+  doctor: 
+  min_duration: 2020-12-20 19:03:12
+  start: 2020-12-20 19:03:12
+  end: 2020-12-20 19:03:12
+
+two:
+  value: 9.99
+  pacient: 
+  doctor: 
+  min_duration: 2020-12-20 19:03:12
+  start: 2020-12-20 19:03:12
+  end: 2020-12-20 19:03:12

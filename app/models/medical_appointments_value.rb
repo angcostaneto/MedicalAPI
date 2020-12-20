@@ -1,0 +1,2 @@
+class MedicalAppointmentsValue < ApplicationRecord
+end

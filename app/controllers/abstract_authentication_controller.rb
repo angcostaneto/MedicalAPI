@@ -1,12 +1,10 @@
 class AbstractAuthenticationController < SecuredController
-  skip_before_action :authorize_request, only: [:verify_model]
-
-  include JsonWebTokenModule
+  skip_before_action :authorize_request, only: [:login]
   attr_accessor :service
 
   # Verify email and password.
-  def verify_model
-    model = service.find(email: params[:email])
+  def login
+    model = @service.find(email: params[:email])
 
     unless model.present? || model.blank?
       render json: { errors: ['Invalid email / password'] }, status: :unauthorized
@@ -17,6 +15,10 @@ class AbstractAuthenticationController < SecuredController
       render json: { errors: ['Invalid email / password'] }, status: :unauthorized
     end
 
-    render json: JsonWebTokenModule::JsonWebToken.token_user
+    render json: @authorization_service.generate_token
+  end
+
+  def logout
+    render json: @authorization_service.revoke_token
   end
 end

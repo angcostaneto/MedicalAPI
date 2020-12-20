@@ -1,12 +1,17 @@
 class AuthorizationService
   include JsonWebTokenModule
-
-  def initialize(headers = {})
-    @headers = headers
-  end
+  attr_accessor :headers
 
   def authenticate_request!
     verify_token
+  end
+
+  def generate_token
+    JsonWebTokenModule::JsonWebToken.token_user
+  end
+
+  def revoke_token
+    JsonWebTokenModule::JsonWebToken.revoke_token_user(@headers['Authorization'].split(' ').last)
   end
 
   private
