@@ -7,6 +7,10 @@ class DoctorsService
     @doctor_repository.create(doctor_params)
   end
 
+  def find(doctor_params)
+    @doctor_repository.find(doctor_params)
+  end
+
   def get(id)
     @doctor_repository.get(id: id)
   end

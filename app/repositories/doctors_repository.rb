@@ -1,6 +1,6 @@
-# Class UsersRepository
+# Class DoctorsRepository
 #
-# Users repository
+# Doctors repository
 #
 class DoctorsRepository < AbstractRepository
   def initialize

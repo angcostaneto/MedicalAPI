@@ -28,4 +28,8 @@ class AbstractRepository < Repository
     model.destroy
   end
 
+  def find(args)
+    @model.find_by(args)
+  end
+
 end

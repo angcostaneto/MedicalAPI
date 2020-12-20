@@ -1,4 +1,6 @@
 class DoctorsController < SecuredController
+  skip_before_action :authorize_request, only: [:create]
+
   def initialize
     super
     @doctor_service = DoctorsService.new
@@ -12,6 +14,8 @@ class DoctorsController < SecuredController
   def get
     doctor = @doctor_service.get(params[:id])
     render json: doctor
+  rescue RecordNotFound
+    head :no_content
   end
 
   private

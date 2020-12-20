@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post 'doctor/create', to: 'doctors#create', as: 'doctor_create'
   post 'doctor/:id/update', to: 'doctors#update', as: 'doctor_update'
   delete 'doctor/:id', to: 'doctors#delete', as: 'doctor_delete'
+  post 'doctor/login', to: 'doctors_login#verify_model', as: 'doctor_login'
 
   # Patient routes
   get 'patient/:id', to: 'patients#get', as: 'patient'
