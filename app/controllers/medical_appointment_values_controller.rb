@@ -1,4 +1,4 @@
-class MedicalAppointmentValueController < SecuredController
+class MedicalAppointmentValuesController < SecuredController
   def initialize
     super
     @medical_appointment_value_service = MedicalAppointmentValueService.new

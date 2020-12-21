@@ -14,4 +14,16 @@ Rails.application.routes.draw do
   delete 'patient/:id', to: 'patients#delete', as: 'patient_delete'
   post 'patient/login', to: 'patients_login#login', as: 'patient_login'
   post 'patient/logout', to: 'patients_login#logout', as: 'patient_logout'
+
+  # Medical Appointment Values routes
+  get 'medical_appointment_value/:id', to: 'medical_appointment_values#get', as: 'medical_appointment_value'
+  post 'medical_appointment_value/create', to: 'medical_appointment_values#create', as: 'medical_appointment_value_create'
+  post 'medical_appointment_value/:id/update', to: 'medical_appointment_values#update', as: 'medical_appointment_value_update'
+  delete 'medical_appointment_value/:id', to: 'medical_appointment_values#delete', as: 'medical_appointment_value_delete'
+
+  # Medical Appointment routes
+  get 'medical_appointment/:id', to: 'medical_appointments#get', as: 'medical_appointment'
+  post 'medical_appointment/create', to: 'medical_appointments#create', as: 'medical_appointment_create'
+  post 'medical_appointment/:id/update', to: 'medical_appointments#update', as: 'medical_appointment_update'
+  delete 'medical_appointment/:id', to: 'medical_appointments#delete', as: 'medical_appointment_delete'
 end

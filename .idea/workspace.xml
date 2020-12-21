@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04ecb931-047a-4f18-a663-1cb150d945a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/models/diagnosis.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20201221010231_create_diagnoses.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/diagnoses.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/diagnosis_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/patients_login_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/patients_login_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/medical_appointment_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/medical_appointments_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/medical_appointment_value_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/medical_appointment_values_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +179,7 @@
       <workItem from="1608071687417" duration="10840000" />
       <workItem from="1608158511295" duration="10652000" />
       <workItem from="1608392879583" duration="15261000" />
-      <workItem from="1608489741704" duration="5813000" />
+      <workItem from="1608489741704" duration="7912000" />
     </task>
     <task id="LOCAL-00001" summary="Create databases tables, create repository base, create user repository and user controller">
       <created>1607822318317</created>
@@ -246,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608509811649</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Create patients login routes and controller">
+      <created>1608510034193</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608510034193</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +288,8 @@
     <MESSAGE value="Add authentication services" />
     <MESSAGE value="Add medical appointment, correct model and routes" />
     <MESSAGE value="Correct medical appointment migrations and create medical appointment controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct medical appointment migrations and create medical appointment controllers" />
+    <MESSAGE value="Create patients login routes and controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create patients login routes and controller" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MedicalAPI@Development__MedicalAPI.rcov" NAME="Development: MedicalAPI Coverage Results" MODIFIED="1608509872548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MedicalAPI" />
