@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_20_221428) do
+ActiveRecord::Schema.define(version: 2020_12_21_010231) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "diagnoses", force: :cascade do |t|
+    t.text "diagnosis"
+    t.bigint "doctor_id"
+    t.bigint "patient_id"
+    t.bigint "medical_appointment_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["doctor_id"], name: "index_diagnoses_on_doctor_id"
+    t.index ["medical_appointment_id"], name: "index_diagnoses_on_medical_appointment_id"
+    t.index ["patient_id"], name: "index_diagnoses_on_patient_id"
+  end
 
   create_table "doctors", force: :cascade do |t|
     t.string "name"
