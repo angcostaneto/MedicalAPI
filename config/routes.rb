@@ -26,4 +26,10 @@ Rails.application.routes.draw do
   post 'medical_appointment/create', to: 'medical_appointments#create', as: 'medical_appointment_create'
   post 'medical_appointment/:id/update', to: 'medical_appointments#update', as: 'medical_appointment_update'
   delete 'medical_appointment/:id', to: 'medical_appointments#delete', as: 'medical_appointment_delete'
+
+  # Medical Appointment routes
+  get 'diagnosis/:id', to: 'diagnosis#get', as: 'diagnosis'
+  post 'diagnosis/create', to: 'diagnosis#create', as: 'diagnosis_create'
+  post 'diagnosis/:id/update', to: 'diagnosis#update', as: 'diagnosis_update'
+  delete 'diagnosis/:id', to: 'diagnosis#delete', as: 'diagnosis_delete'
 end
