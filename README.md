@@ -53,6 +53,7 @@
 
 # Known issues
 * Not revoking token when is logged out
+* Necessary to hide some fields from model
 
 # Next release
 * 21/12/2020 - Update methods
