@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04ecb931-047a-4f18-a663-1cb150d945a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/models/medical_appointment.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/medical_appointments_value.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/repositories/medical_appointment_repository.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/repositories/medical_appointments_value_repository.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/medical_appointment_service.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/medical_appointment_value_service.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20201220220312_create_medical_appointments.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20201220221235_create_medical_appointments_values.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20201220221428_add_value_references_medical_appointments.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/medical_appointments.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/medical_appointments_values.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/medical_appointment_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/medical_appointments_value_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/medical_appointment_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/medical_appointment_value_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/abstract_authentication_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/abstract_authentication_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/secured_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/secured_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/doctor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/doctor.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/health_plan.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/health_plan.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/medical_specialization.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/medical_specialization.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/patient.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/patient.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/authorization_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/authorization_service.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/json_web_token_module/json_web_token.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/json_web_token_module/json_web_token.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20201220220312_create_medical_appointments.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20201220220312_create_medical_appointments.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +175,7 @@
       <workItem from="1608071687417" duration="10840000" />
       <workItem from="1608158511295" duration="10652000" />
       <workItem from="1608392879583" duration="15261000" />
-      <workItem from="1608489741704" duration="3987000" />
+      <workItem from="1608489741704" duration="5335000" />
     </task>
     <task id="LOCAL-00001" summary="Create databases tables, create repository base, create user repository and user controller">
       <created>1607822318317</created>
@@ -252,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608422700221</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add medical appointment, correct model and routes">
+      <created>1608508256723</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608508256724</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +268,8 @@
     <MESSAGE value="Update readme and add jwt token" />
     <MESSAGE value="Add jwt token and auth0 to controllers and delete users controllers" />
     <MESSAGE value="Add authentication services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add authentication services" />
+    <MESSAGE value="Add medical appointment, correct model and routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add medical appointment, correct model and routes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MedicalAPI@Development__MedicalAPI.rcov" NAME="Development: MedicalAPI Coverage Results" MODIFIED="1608425075409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MedicalAPI" />

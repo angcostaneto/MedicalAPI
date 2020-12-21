@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_12_032547) do
+ActiveRecord::Schema.define(version: 2020_12_20_221428) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,28 @@ ActiveRecord::Schema.define(version: 2020_12_12_032547) do
     t.text "plan"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "medical_appointments", force: :cascade do |t|
+    t.bigint "patients_id"
+    t.bigint "doctors_id"
+    t.time "min_duration"
+    t.datetime "start"
+    t.datetime "end"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["doctors_id"], name: "index_medical_appointments_on_doctors_id"
+    t.index ["patients_id"], name: "index_medical_appointments_on_patients_id"
+  end
+
+  create_table "medical_appointments_values", force: :cascade do |t|
+    t.decimal "value"
+    t.bigint "doctor_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "{:foreign_key=>true}_id"
+    t.index ["doctor_id"], name: "index_medical_appointments_values_on_doctor_id"
+    t.index ["{:foreign_key=>true}_id"], name: "index_medical_appointments_values_on_{:foreign_key=>true}_id"
   end
 
   create_table "medical_specializations", force: :cascade do |t|
