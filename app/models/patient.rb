@@ -1,4 +1,5 @@
 class Patient < UserBase
-  validates :health_plan_id, presence: true
-  belongs_to :health_plan
+  belongs_to :health_plan, optional: true
+
+  validates :health_plans_id, presence: true
 end

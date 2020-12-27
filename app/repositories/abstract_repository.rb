@@ -19,8 +19,10 @@ class AbstractRepository < Repository
   end
 
   def update(id, args)
-    model = get(id)
+    model = get(id: id)
     model.update(args)
+
+    model
   end
 
   def delete(id)

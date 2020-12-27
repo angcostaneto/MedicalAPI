@@ -56,6 +56,7 @@
 * Necessary to hide some fields from model
 
 # Next release
-* 21/12/2020 - Update methods
+* <s>21/12/2020 - Update methods</s>
 * 23/12/2020 - Roles for patients and doctors
 * 26/12/2020 - Add unit tests
+* 27/12/2020 - Integrates with circle ci

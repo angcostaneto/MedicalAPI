@@ -18,6 +18,15 @@ class DoctorsController < SecuredController
     head :no_content
   end
 
+  def update
+    doctor = @doctor_service.update(params[:id], doctor_params)
+    render json: doctor
+  end
+
+  def delete
+    @doctor_service.delete(params[:id])
+  end
+
   private
 
   def doctor_params

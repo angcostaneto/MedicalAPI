@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04ecb931-047a-4f18-a663-1cb150d945a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/repositories/medical_specialization_repository.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/medical_specialization_service.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20201221010231_create_diagnoses.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20201221010231_create_diagnoses.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/doctors_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/doctors_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/patients_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/patients_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/doctor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/doctor.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/medical_appointment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/medical_appointment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/medical_appointments_value.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/medical_appointments_value.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/patient.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/patient.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repositories/abstract_repository.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/abstract_repository.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +181,10 @@
       <workItem from="1608071687417" duration="10840000" />
       <workItem from="1608158511295" duration="10652000" />
       <workItem from="1608392879583" duration="15261000" />
-      <workItem from="1608489741704" duration="11861000" />
+      <workItem from="1608489741704" duration="12607000" />
+      <workItem from="1609016395033" duration="25000" />
+      <workItem from="1609016434477" duration="7873000" />
+      <workItem from="1609024473336" duration="5422000" />
     </task>
     <task id="LOCAL-00001" summary="Create databases tables, create repository base, create user repository and user controller">
       <created>1607822318317</created>
@@ -268,7 +277,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608518954775</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Correct diagnosis migration and update README.md">
+      <created>1608520118207</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608520118207</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update README.md">
+      <created>1608521045016</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608521045016</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,9 +324,11 @@
     <MESSAGE value="Create patients login routes and controller" />
     <MESSAGE value="Create diagnosis migration and add routes and controller for medical appointment" />
     <MESSAGE value="Create diagnosis controller, service and repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create diagnosis controller, service and repository" />
+    <MESSAGE value="Correct diagnosis migration and update README.md" />
+    <MESSAGE value="Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MedicalAPI@Development__MedicalAPI.rcov" NAME="Development: MedicalAPI Coverage Results" MODIFIED="1608509872548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MedicalAPI" />
+    <SUITE FILE_PATH="coverage/MedicalAPI@Development__MedicalAPI.rcov" NAME="Development: MedicalAPI Coverage Results" MODIFIED="1609027226650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MedicalAPI" />
   </component>
 </project>
