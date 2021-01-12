@@ -8,19 +8,30 @@ class DoctorsController < SecuredController
 
   def create
     doctor = @doctor_service.create(doctor_params)
-    render json: doctor
+    if doctor.persisted?
+      render json: doctor
+    else
+      render json: doctor.errors, status: :bad_request
+    end
+
   end
 
   def get
     doctor = @doctor_service.get(params[:id])
-    render json: doctor
-  rescue RecordNotFound
-    head :no_content
+    if doctor
+      render json: doctor
+    else
+      render json: doctor.errors, status: :not_found
+    end
   end
 
   def update
     doctor = @doctor_service.update(params[:id], doctor_params)
-    render json: doctor
+    if doctor.persisted?
+      render json: doctor
+    else
+      render json: doctor.errors, status: :bad_request
+    end
   end
 
   def delete
