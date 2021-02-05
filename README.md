@@ -1,3 +1,6 @@
+# Discontinued
+## I'm working in a new version of this software using java with spring boot.
+
 # Software under construction not use in production
 
 # Libraries used
