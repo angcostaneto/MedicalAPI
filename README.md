@@ -1,5 +1,5 @@
 # Discontinued
-## I'm working in a new version of this software using java with spring boot.
+## I'm working in a new version of this software using C#.
 
 # Software under construction not use in production
 
